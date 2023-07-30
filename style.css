@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+
+:root {
+    --main-background-color: #07131d;
+    --secondary-background-color: #34353a;
+    --accent-color: #e2ac79;
+    --base-color: #ece6e6;
+
+    /* font */
+    --font-main: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: var(--font-main);
+}
+
+h2 {
+    font-size: 2rem;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--base-color);
+    transition: 0.2s ease-in;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* HERO */
+
+.hero {
+    background-color: var(--main-background-color);
+    height: 100vh;
+    color: var(--base-color);
+    padding: 0 8.6rem;
+    background: radial-gradient(#14202b, #07131d);
+}
+
+/* NAVBAR */
+
+nav {
+    color: var(--base-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+}
+
+/* INITIALS */
+
+.initials {
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    transition: all 0.3s;
+}
+
+.initials::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.initials:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+#s {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#m {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.dot-yellow {
+    font-size: 5rem;
+    margin: 0 0 1rem -0.15rem;
+    color: var(--accent-color);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+/* HERO LEFT */
+
+.hero h1 {
+    display: inline-block;
+    width: 300px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.hero h1::after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.contact-list {
+    margin: 3.2rem 0 2.3rem;
+    line-height: 1.6rem;
+    position: relative;
+}
+
+.contact-list::before {
+    content: "";
+    border-radius: 2px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: -1.2rem;
+}
+
+.contact-list ul {
+    display: flex;
+}
+.contact-list ul li {
+    list-style: none;
+}
+
+.contact-list ul li a {
+    transition: all 0.2 ease;
+}
+
+.contact-list ul li:hover {
+    transform: scale(1.03);
+}
+
+#link-border span {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero-container .left button {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 1rem 1.9rem;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-container .left button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* IMG */
+
+.blurred-image {
+    background-image: url(/assets/profile-pic.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 0 0 8px 8px var(--main-background-color) inset;
+}
+
+/* HERO RIGHT */
+
+.hero-container .right {
+    width: 350px;
+    margin-right: 100px;
+}
+
+.subtitle {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-container p {
+    margin: 10px 0 14px;
+}
+
+.hero-container .right .more a {
+    color: var(--accent-color);
+}
+
+.hero-container .right .more {
+    width: 300px;
+    transition: all 0.2s ease;
+    display: flex;
+}
+.hero-container .right .more a:hover {
+    transform: scale(1.03);
+}
